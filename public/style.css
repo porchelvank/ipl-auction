@@ -1,0 +1,209 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #090d18;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #151d32;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e9b949;
+}
+
+header h1 {
+    color: #ffc857;
+    font-size: 28px;
+}
+
+header p {
+    color: #aaa;
+    margin-top: 7px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+}
+
+.panel {
+    background: #151d32;
+    border: 1px solid #293652;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #ffc857;
+    margin-bottom: 15px;
+}
+
+.player-card {
+    text-align: center;
+    padding: 30px 15px;
+    background: linear-gradient(135deg, #202d4b, #11182a);
+    border: 1px solid #dba93c;
+    border-radius: 15px;
+}
+
+.player-card h2 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.role {
+    color: #bbb;
+}
+
+.price {
+    color: #ffc857;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.timer {
+    font-size: 38px;
+    font-weight: bold;
+    color: #52e6a0;
+    margin: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    background: #263451;
+    color: white;
+    border: 1px solid #52627e;
+    margin: 12px 0;
+}
+
+select option:disabled {
+    color: #888;
+}
+
+button {
+    background: #eab543;
+    color: #111;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+    background: #ffc857;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background: #555;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.bid-button {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.team {
+    background: #202d48;
+    padding: 15px;
+    border-radius: 10px;
+    border-top: 3px solid #eab543;
+    overflow-wrap: anywhere;
+}
+
+.team h3 {
+    color: #ffc857;
+    margin-bottom: 10px;
+}
+
+.team p {
+    font-size: 14px;
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.status {
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 12px;
+}
+
+.green {
+    color: #52e6a0;
+}
+
+.red {
+    color: #ff7373;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.list-item {
+    padding: 10px;
+    border-bottom: 1px solid #34405a;
+    font-size: 14px;
+}
+
+.muted {
+    color: #aaa;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    .teams {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .player-card h2 {
+        font-size: 23px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .panel {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .teams {
+        grid-template-columns: 1fr;
+    }
+
+    .price {
+        font-size: 27px;
+    }
+}
